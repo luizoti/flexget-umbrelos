@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: flexget
+name: FlexGet
+tagline: FlexGet is a multipurpose automation tool for all of your media
+icon: https://svgshare.com/i/1159.svg
+category: Development
+version: "1.0.0"
+port: 5050
+description: >-
+  FlexGet is a multipurpose automation tool for all of your media
+
+developer: Luiz Antonio Lazoti
+website: https://flexget.com/
+submitter: luizoti
+submission: https://github.com/luizoti/flexget-umbrelos
+repo: https://github.com/luizoti/flexget-umbrelos
+support: https://github.com/luizoti/flexget-umbrelos/issues
+gallery:
+  - https://i.imgur.com/VKUzwgZ.png
+releaseNotes: >-
+  Nothing.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

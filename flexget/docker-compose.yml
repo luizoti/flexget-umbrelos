@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: flexget_server_1
+      APP_PORT: 5050
+    
+  server:
+    image: wiserain/flexget
+    container_name: flexget
+    user: "1000:1000"
+    init: true
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Sao_Paulo
+      - FG_WEBUI_PASSWD=admin_pass_12345
+    volumes:
+      - /home/umbrel/.extra_configs/flexget:/config
+      - /media/hd/:/media/hd/
+      - /home/umbrel/.downloads_temp/:/media/downloads_temp/
